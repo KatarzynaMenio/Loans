@@ -2,3 +2,6 @@
 /.idea/loans.iml
 /.idea/vcs.xml
 /.idea/modules.xml
+/node_modules/
+/.parcel-cache
+/dist
