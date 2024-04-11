@@ -60,3 +60,122 @@ body {
     }
   }
 }
+
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: calc(100vh - 80px);
+
+  .main__intro {
+    display: flex;
+
+    .intro__info {
+      .info__small-heading {
+        color: $accent-color;
+        font-weight: 700;
+        font-size: 1.5rem;
+      }
+
+      .info__heading {
+        color: $main-color;
+        font-weight: 700;
+        font-size: 4rem;
+      }
+    }
+
+    .info__icons {
+      display: flex;
+      margin-top: 60px;
+      position: relative;
+
+      span {
+        font-weight: 700;
+      }
+
+      .icons__item {
+        display: flex;
+        flex-direction: column;
+        margin: 0 20px;
+
+        &:first-child {
+          margin-left: 0;
+        }
+
+        &:first-child::before {
+          content: "\f0c2";
+          position: relative;
+          color: $accent-color;
+          font-size: 2rem;
+          font-weight: 700;
+          font-family: "Font Awesome 5 Free", sans-serif;
+        }
+
+        &:nth-child(2)::before {
+          content: "\f3d1";
+          position: relative;
+          color: $accent-color;
+          font-size: 2rem;
+          font-weight: 700;
+          font-family: "Font Awesome 5 Free", sans-serif;
+        }
+
+        &:nth-child(3)::before {
+          content: "\f2f2";
+          position: relative;
+          color: $accent-color;
+          font-size: 2rem;
+          font-weight: 700;
+          font-family: "Font Awesome 5 Free", sans-serif;
+        }
+      }
+    }
+
+    .intro__form {
+      box-shadow: 0 0 20px rgba(0, 0, 0, .13);
+      background-color: white;
+      height: auto;
+
+      h3 {
+        margin: 30px;
+        font-size: 2rem;
+        font-weight: 700;
+      }
+
+      .form__field {
+        display: flex;
+        flex-direction: column;
+        margin: 0 30px 0 30px;
+
+        label {
+          font-size: 0.8rem;
+          font-weight: 600;
+          margin-bottom: 12px;
+        }
+
+        input {
+          border: none;
+          border-bottom: 1px solid rgba(38, 37, 37, 0.5);
+          margin-bottom: 5px;
+        }
+      }
+
+      .form__button {
+        background-color: $accent-color;
+        outline: none;
+        border: none;
+        border-radius: 8px;
+        display: flex;
+        align-content: center;
+        padding: 20px 30px;
+        margin-left: 30px;
+        margin-bottom: 30px;
+        margin-top: 40px;
+        color:white;
+        font-weight: 600;
+        font-size: 1.1rem;
+      }
+    }
+  }
+}
+
