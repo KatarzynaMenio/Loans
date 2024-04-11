@@ -2,6 +2,12 @@
 
 Welcome to our Loans Landing Page! Here, you'll find all the information you need about getting loans tailored to your needs.
 
+**Screenshots:**
+
+<span>
+<img src="images/loans.png" alt="bestshop" height="200">
+</span>
+
 ## Technologies Used
 This project is built using the following technologies:
 
